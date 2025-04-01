@@ -10,7 +10,7 @@ async function getChefBirthday(id) {
 
     if (user?.message) throw new Error(user.message)
     
-     const chefBirthday = new Date(birthDate).toLocaleDateString()
+     const chefBirthday = new Date(user.birthDate).toLocaleDateString()
          
     return chefBirthday
     
